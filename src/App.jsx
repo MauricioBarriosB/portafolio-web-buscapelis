@@ -17,7 +17,7 @@ function useSearch() {
             return
         }
         if (search === '') {
-            setError('No se puede buscar una película vacía.')
+            setError('No se puede buscar una película con el campo vacío.')
             return
         }
         if (search.match(/^\d+$/)) {
@@ -65,7 +65,7 @@ function App() {
         <div className='page'>
 
             <div>
-                <h3>La Búsqueda se realizará mediante API Compilación de Películas</h3>
+                <h3>La búsqueda se realizará mediante API Compilación de Películas 2025</h3>
                 <form className='form' onSubmit={handleSubmit}>
                     <input
                         style={{
